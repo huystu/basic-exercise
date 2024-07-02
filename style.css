@@ -1,0 +1,24 @@
+.Brain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0px 70px 0px;
+  }
+  
+  .Brain > div {
+    flex: 1 0 200px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .Brain .icon-svg {
+    width: 150px;
+    height: 150px;
+    fill: currentColor;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: red;
+  }
+
+
