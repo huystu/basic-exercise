@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+}    
+
+.content{
+    background-image: url(https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/fullscreen-slider.jpg);
+    background-size: cover;
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header{
+    background-image: linear-gradient(to bottom, #f5e9d5, #f5e9d5b9, #f5e9d500);
+}
+
+.main-menu{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    text-align: center;
+    justify-content:space-evenly;
+    list-style-type: none;
+    overflow: hidden;
+    text-decoration: none;
+    margin-top: -70px;
+    margin-left: 430px;
+    margin-right: 170px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.logo{
+    margin-left: 160px;
+    margin-top: 20px;
+}
