@@ -1,37 +1,220 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Verdana', sans-serif;
-}    
-
-.content{
+    font-family: 'Lucida Sans', sans-serif;
+}
+body{
     background-image: url(https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/fullscreen-slider.jpg);
     background-size: cover;
-    height: 750px;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+
+.content{
+    max-width: 1170px;
+    margin: 0px auto;
 }
 
 .header{
-    background-image: linear-gradient(to bottom, #f5e9d5, #f5e9d5b9, #f5e9d500);
+    background-image: linear-gradient(to bottom, #f5e9d5, #f5e9d5b9, #f5e9d500);/*chuyển màu*/
 }
 
-.main-menu{
-    display: flex;
-    /* flex-wrap: nowrap; */
-    text-align: center;
-    justify-content:space-evenly;
-    list-style-type: none;
-    overflow: hidden;
-    text-decoration: none;
-    margin-top: -70px;
-    margin-left: 430px;
-    margin-right: 170px;
-    line-height: 35px;
-    font-size: 14px;
+.baselogo{
+    margin-top: 0px;
 }
 
 .logo{
-    margin-left: 160px;
     margin-top: 20px;
+    padding-bottom: 17px;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#main-menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 60px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+#main-menu li a{
+    color: #303030;  /*màu chữ*/
+    display: block;
+    position: relative;
+    text-decoration: none;         /*ẩn gạch dưới dòng*/
+    padding: 0px 30px;
+}
+
+#main-menu>li:hover>a{  /*đổi mày chữ khi di chuột*/
+    color: #838c48;
+}
+
+#main-menu li a i{
+    margin: 0px 15px;
+    display: none;
+}
+
+#main-menu>li:hover>a>i{
+    color: #303030;
+    display: block;
+}
+
+
+#main-menu ul.sub-menu{
+    background-color: #fdf6ea;
+    border-top: 3px solid #e2d6c1;    /*đường viền trên của sub menu*/
+    position: absolute;
+    list-style-type: none;             /* ẩn dấu mục lục*/
+    display: none;                     /*ẩn sub menu*/
+    margin: 0px 10px;
+    padding: 15px 0px;
+    width: 180px;
+}
+
+#main-menu li:hover>ul.sub-menu{  /*chỉ hiển thị sub menu ở cấp trực tiếp khi di chuột*/
+    display: block;
+}
+
+#main-menu ul.sub-menu a{  /*thẻ a của menu phụ*/
+    display: block;
+    padding: 15px 25px;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{ /* menu phụ của phụ*/
+    left: 150px;
+    margin: -50px 15px;
+}
+
+#main-menu ul.sub-menu li:hover>a{ /* background mỗi phần tử a của submenu đổi màu khi di chuột*/
+    background-color: #f5e9d4;
+}
+
+#main-menu div.sub-menu-1{
+    background-color: #fdf6ea;
+    border-top: 3px solid #e2d6c1; 
+    position: absolute;
+    display: none;
+    margin: 0px 10px;
+    padding: 30px 40px;
+    width: 900px;
+    right:240px;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child ul.list {
+    list-style: none;
+    padding: 15px 0px;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child ul.list li>a{
+    padding: 15px;
+    padding-right: 50px;
+    right: 110px;
+    top: 30px;
+    width: 100%;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child{
+    display: flex;
+    width: 100%;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child h3{
+    width: 100%;
+}
+
+#main-menu li:hover div.sub-menu-1{
+    display: block;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child ul.list li:hover>a{ /* background mỗi phần tử a của submenu đổi màu khi di chuột*/
+    background-color: #f5e9d4;
+}
+
+.list{
+    list-style: none;
+}
+
+#name{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 30px;
+    margin-top: 35px;
+    margin-left: -120px; 
+    border-color: #e2d6c1;   
+    border-radius: 2px solid;
+}
+
+#email{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-left: -120px;
+    border-color: #e2d6c1;   
+    border-radius: 2px solid;
+}
+
+#message{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    margin-left: -120px;
+    border-color: #e2d6c1;   
+    border-radius: 2px solid;
+}
+
+#submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-left: -20px;
+    color: #ffff;
+    background-color: #838c48;
+    border-color: #838c48;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.list-1{
+    list-style-type: none;
+}
+.list-1 li>a{
+    padding: 0px;
+    padding-right: 50px;
+    top: 50px;
+    width: 100%;
+}
+
+#signup{
+    display:flex;
+    list-style-type: none;
+    margin: 60px;
+    padding: 0;
+    font-size: 14px;
+}
+
+#signup li a{
+    color: #303030; /*màu chữ*/
+    display: flex;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+#signup>li:hover>a{
+    color: #da853d;
+}
+

@@ -8,63 +8,282 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="content">
-        <header class="header">    
-            <nav>
-                <div class="logo">
-                    <img loading="lazy" width="98" height="99" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/lms-logo.png" class="attachment-full size-full" alt="" decoding="async">
-                </div>
+    <div class="header">    
+        <nav class="content">
+            <a class="baselogo" href="/Home page">
+                <img class="logo" loading="lazy" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/lms-logo.png" class="attachment-full size-full" alt="" decoding="async">
+            </a>
 
-                <!-- <div class="flex-container">
-                    <div>
-                        <p style="border-style:solid"> HOME</p>
-                    </div>
+            <ul id="main-menu">
+                <li>
+                    <a href="/Home page/">HOME<i class="fa-sharp fa fa-caret-down fa-lg"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="/home-2/">Home II</a></li>
+                            <li><a href="/home-landing-page/">Home - Landing Page</a></li>
+                            <li><a href="/home-subscrition/">Home - Subscrition</a></li>
+                            <li><a href="/home-course-search/">Home - Course - Search</a></li>
+                            <li><a href="/zoom-meeting/">Zoom - Meeting</a></li>
+                            <li><a href="/home-kids/">Home - kids</a></li>
+                            <li><a href="/points-system">Points - System</a></li>
+                        </ul>
+                </li>
 
-                    <div>COURSES</div>
+                <li>
+                    <a href="/courses/">COURSES<i class="fa-sharp fa fa-caret-down fa-lg"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="/courses-template/">Courses - Template</a></li>
+                        <li><a href="/lessons/">Lessons</a></li>
+                        <li><a href="/search - courses/">Search - Courses</a></li>
+                        <li><a href="/membership/">Mempership</a></li>
+                        <li><a href="/courses-detail/">Courses - Detail</a>
+                            <ul class="sub-menu">
+                                <li><a href="/detail-type-1/">Detail Type - 1</a></li>
+                                <li><a href="/detail-type-2/">Detail Type - 2</a></li>
+                                <li><a href="/detail-type-3/">Detail Type - 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
-                    <div>PAGES</div>  
+                <li>
+                    <a href="/pages/">PAGES<i class="fa-sharp fa fa-caret-down fa-lg"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="/buddypress/">BuddyPress</a>
+                            <ul class="sub-menu">
+                                <li><a href="/members/">Members</a></li>
+                                <li><a href="/site-wide-activity">Site-Wide Activity</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/event/">Event</a>
+                            <ul class="sub-menu">
+                                <li><a href="/events-listing/">Events Listing</a></li>
+                                <li><a href="/events-month/">Events Month</a></li>
+                                <li><a href="/events-day/">Events Day</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/headers/">Headers</a>
+                            <ul class="sub-menu">
+                                <li><a href="/header-1/">Header-1</a></li>
+                                <li><a href="/header-2/">Header-2</a></li>
+                                <li><a href="/header-3/">Header-3</a></li>
+                                <li><a href="/header-4/">Header-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/side-navigation/">Side - Navigation</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/teachers/">Teachers</a></li>
+                        <li><a href="/teachers-profile/">Teachers Profile</a></li>
+                    </ul>
+                </li>
 
-                    <div>BLOG</div>
+                <li>
+                    <a href="/blog/">BLOG<i class="fa-sharp fa fa-caret-down fa-lg"></i></a>
+                        <div class="sub-menu-1">
+                            <div class="menu-child">
+                            <h3>I COLUMN</h3>
+                            <ul class="list">
+                                <li><a href="/buddypress/">FullWidth</a></li>
+                                <li><a href="/event/">With Left Sidebar</a></li>
+                                <li><a href="/headers/">With Right Sidebar</a></li>
+                                <li><a href="/side-navigation/">With Pagination</a></li>
+                            </ul>    
 
-                    <div>GALLERY</div>
+                            <h3>II COLUMN</h3>
+                            <ul class="list">
+                                <li><a href="/buddypress/">FullWidth</a></li>
+                                <li><a href="/event/">With Left Sidebar</a></li>
+                                <li><a href="/headers/">With Right Sidebar</a></li>
+                                <li><a href="/side-navigation/">With Pagination</a></li>
+                            </ul>    
+                            
+                            <h3>III COLUMN</h3>
+                            <ul class="list">
+                                <li><a href="/buddypress/">FullWidth</a></li>
+                                <li><a href="/event/">With Left Sidebar</a></li>
+                                <li><a href="/headers/">With Right Sidebar</a></li>
+                                <li><a href="/side-navigation/">With Pagination</a></li>
+                            </ul>    
 
-                    <div>SHOP</div>  
+                            <h3>THUMB IMAGE</h3>
+                            <ul class="list">
+                                <li><a href="/buddypress/">FullWidth</a></li>
+                                <li><a href="/event/">With Left Sidebar</a></li>
+                                <li><a href="/headers/">With Right Sidebar</a></li>
+                                <li><a href="/side-navigation/">With Pagination</a></li>
+                            </ul>    
+                            </div>
+                            <h3 class="h3">FULLWITH IMAGE</h3>
+                            <ul class="list">
+                                <li><a>
+                                    <img src="http://apersevera.com/wp-content/uploads/2014/05/mega-menu-image.png" alt="" title="" width="890" height="255">                                </a></li>
+                            </ul>
+                        </div>
 
-                    <div>CONTACT</div>
+                </li>                        
 
-                    <div>
-                        <p style="border-style:solid"> <i class="fa fa-user fa-lg"></i></p> Login |
-                    </div>
+                <li>
+                    <a href="/gallery/">GALLERY<i class="fa-sharp fa fa-caret-down fa-lg"></i></a>
+                    <div class="sub-menu-1">
+                        <div class="menu-child">
+                        <h3>I COLUMN</h3>
+                        <ul class="list">
+                            <li><a href="/buddypress/">FullWidth</a></li>
+                            <li><a href="/event/">With Left Sidebar</a></li>
+                            <li><a href="/headers/">With Right Sidebar</a></li>
+                            <li><a href="/side-navigation/">With Pagination</a></li>
+                        </ul>    
 
-                    <div> Register</div>
+                        <h3>II COLUMN</h3>
+                        <ul class="list">
+                            <li><a href="/buddypress/">FullWidth</a></li>
+                            <li><a href="/event/">With Left Sidebar</a></li>
+                            <li><a href="/headers/">With Right Sidebar</a></li>
+                            <li><a href="/side-navigation/">With Pagination</a></li>
+                        </ul>    
+                        
+                        <h3>III COLUMN</h3>
+                        <ul class="list">
+                            <li><a href="/buddypress/">FullWidth</a></li>
+                            <li><a href="/event/">With Left Sidebar</a></li>
+                            <li><a href="/headers/">With Right Sidebar</a></li>
+                            <li><a href="/side-navigation/">With Pagination</a></li>
+                        </ul>    
 
-                    <div>
-                        <i class="fa fa-shopping-cart fa-lg"></i>                        
-                    </div>
-                  </div> -->
-                <ul class="main-menu">
-                    <li class="list">
-                        <a href="/Home page">HOME</a>
-                        <span class="arrow arrow-down"></span>
-                                <ul class="sub-menu">
-                                    <li><a href="/home II">Home II</a></li>
-                                    <li><a href="/news">News</a></li>
-                                    <li><a href="/contact">Contact</a></li>
-                                    <li><a href="/about">About</a></li>
+                        <h3>CONTACT US NOW</h3>
+                        <ul class="list">
+                            <li>
+                                <label for="name"></label>
+                                <input type="text" placeholder="Your name" name="name" id="name">
+                            </li>
+                            <li>
+                                <label for="name"></label>
+                                <input type="text" placeholder="Email" name="email" id="email">
+                            </li>
+                            <li>
+                                <label for="name"></label>
+                                <input type="text" placeholder="Message" name="message" id="message">
+                            </li>
+
+                            <li>
+                                <input type="submit" value="SENT EMAIL" id="submit">
+
+                            </li>
+
+                        </ul>    
+                        </div>
+                </li>
+
+                <li>
+                    <a href="/shop/">SHOP<i class="fa-sharp fa fa-caret-down fa-lg"></i></a>
+                    <div class="sub-menu-1">
+                        <div class="menu-child">
+                        <h3>POPULAR PRODUCT</h3>
+                            <ul class="list">
+                                <li><a href="/application-developement/">Application Developement
+                                        <img lang="lazy" width="42" height="42" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/cover2.jpg" alt decoding="async">
+                                    </a>
+                                    <a>
+                                    <del aria-hidden="true">
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">$</span>15.00
+                                            </bdi>
+                                        </span>
+                                    </del>
+                                    
+                                    <ins>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">$</span>12.00
+                                            </bdi>
+                                        </span>
+                                    </ins>
+                                    </a>
+                                </li>
+
+                                <li><a href="/video-game-technologies/">Video Game Technologies
+                                        <img lang="lazy" width="42" height="42" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/note.jpg" alt decoding="async">
+                                    </a>
+                                    <a>
+                                    <ins>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">$</span>35.00
+                                            </bdi>
+                                        </span>
+                                    </ins>
+                                    </a>
+                                </li>
+
+                                <li><a href="/database-tachniques/">Database Techniques</a>
+                                    <img lang="lazy" width="42" height="42" src="https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/note.jpg" alt decoding="async">
+                                    </a>
+                                <a>
+                                <ins>
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi>
+                                            <span class="woocommerce-Price-currencySymbol">$</span>15.00
+                                        </bdi>
+                                    </span>
+                                </ins>
+                                </a>
+                                </li>
+                            </ul>
+
+                                <h3>SHOP NOW</h3>
+                                <ul class="list">
+                                    <li><a href="/shop-four-column/">Shop Four Column</a></li>
+                                    <li><a href="/shop-three-column/">Shop Three Column</a></li>
+                                    <li><a href="/shop-two-column/">Shop Two Column</a></li>
+                                    <li><a href="/cart/">Cart</a></li>
+                                    <li><a href="/checkout/">Checkout</a></li>
+                                </ul> 
+
+                                <h3>MY ACCOUNT</h3>
+                                <ul class="list">
+                                    <li><a href="/view-order/">View Order</a></li>
+                                    <li><a href="/oder-received/">Oder Received</a></li>
+                                    <li><a href="/edit-account/">Edit Account</a></li>
+                                    <li><a href="/edit-my-address/">Edit My Address</a></li>
                                 </ul>
-                    </li>
-                </ul>
-            </nav>        
-        </header>
+                                <h3></h3>
+                                <ul class="list">
+                                    <li><a href=""></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </li>
 
-        <banner>
-        
-        </banner>
+                <li>
+                    <a href="/contact/">CONTACT<i class="fa-sharp fa fa-caret-down fa-lg"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="/contact-layout-2/">Contact - layout-2</a></li>
+                        <li><a href="/contact-layout-3/">Contact - layout-3</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-        <active>
+            <ul id="signup">
+                <li class="list">
+                    <a href="/login/">
+                        <i class="fa fa-user fa-lg"></i> 
+                        Login 
+                    </a>
+                </li>
 
-        </active>
+                <span>|</span>
 
+                <li class="list">
+                    <a href="/register/">Register</a>
+                </li>
+
+                <li class="list">
+                    <a href="/cart/">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                    </a>
+                </li>
+            
+        </nav>        
     </div>
 </body>
 </html>
