@@ -1,69 +1,74 @@
 body{
-  background-color: #F5E9D4 ;
+  background-color: #fdf6ea ;
 }
 .elementor-section {
   padding: 70px 0px 70px 0px;
-     display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .elementor-container{
-  width: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: center;
   justify-content: center;
-  gap: 20px;
 }
 
 .icon{
   margin: 0 50px;
-  display: flex;
+  display: flex; /* Đảm bảo flexbox được áp dụng */
   width: 150px; /* Đặt kích thước chiều rộng */
   height: 150px; /* Đặt kích thước chiều cao */
   border-radius: 50%; /* Làm cho phần tử trở thành hình tròn */
-  background-color: #E2D6C1; /* Màu nền của hình tròn */
+  background-color: #f5e9d4; /* Màu nền của hình tròn */
+  align-items: center;
+  justify-content: center;
 }
 
 .elementor-container.elementor-column-gap-no .elementor-column {
-  margin-bottom: 100px; 
+  display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
 }
 
 .icon-svg {
   width: 150px; /* Đặt kích thước chiều rộng */
   height: 150px; /* Đặt kích thước chiều cao */
   border-radius: 50%; /* Làm cho phần tử trở thành hình tròn */
-  background-color: #E2D6C1; /* Màu nền của hình tròn */
+  background-color: #f5e9d4; /* Màu nền của hình tròn */
   overflow: hidden;
   position: relative;
+  flex: 1px;
 }
 
+
 .icon-svg svg {
-  width: 75%; /* Đặt kích thước SVG bên trong */
-  height: 75%;
-  fill: #F67F45; /* Màu sắc cho biểu tượng SVG */
+  width: 50%; /* Đặt kích thước SVG bên trong */
+  height: 50%;
+  fill: #da853d; /* Màu sắc cho biểu tượng SVG */
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .text {
   position: absolute;
-  width: 100%;
-  top: 40%; /* Đưa text lên trên 50% container */
-  margin-left: -5px;
-  transform: translateY(-50%); /* Dịch chuyển lên trên để căn giữa */
-  color: #333; /* Màu chữ */
+  color: 303030; /* Màu chữ */
+  flex: 1px;
+  margin-top: 200px;
+  margin-left: 10px; /* Khoảng cách bên trái */
+  margin-right: 10px; /* Khoảng cách bên phải */
 }
 
 h5 {
   font-size: 1.5em;
   margin: 0;
   transition: color 0.3s;
+  font: 20px Raleway,sans-serif;
 }
 .icon:hover .icon-svg {
           transform: scale(0.9);
       }
       .icon:hover .text h5 {
-          color: #81C77F;
+          color: #838c48;
       }
