@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background-image: url(https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/fullscreen-slider.jpg);
@@ -42,7 +42,9 @@ nav{
     justify-content: space-between;
     margin: 60px;
     padding: 0px;
-    font-size: 14px;
+    margin-left: 130px;
+    font-size: 15px;
+    font-weight:600;
 }
 
 #main-menu li a{
@@ -50,11 +52,19 @@ nav{
     display: block;
     position: relative;
     text-decoration: none;         /*ẩn gạch dưới dòng*/
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 
 #main-menu>li:hover>a{  /*đổi mày chữ khi di chuột*/
     color: #838c48;
+}
+
+#main-menu li.home a{
+    margin-top: -13px;
+}
+
+#main-menu li.home a p{
+    padding: 10px 20px;
 }
 
 #main-menu li a i{
@@ -77,6 +87,7 @@ nav{
     margin: 0px 10px;
     padding: 15px 0px;
     width: 180px;
+    font-weight: lighter;
 }
 
 #main-menu li:hover>ul.sub-menu{  /*chỉ hiển thị sub menu ở cấp trực tiếp khi di chuột*/
@@ -115,8 +126,8 @@ nav{
 
 #main-menu li div.sub-menu-1 div.menu-child ul.list li>a{
     padding: 15px;
-    padding-right: 50px;
-    right: 110px;
+    padding-right: 40px;
+    right: 120px;
     top: 30px;
     width: 100%;
 }
@@ -124,10 +135,16 @@ nav{
 #main-menu li div.sub-menu-1 div.menu-child{
     display: flex;
     width: 100%;
+    font-weight: lighter;
 }
 
-#main-menu li div.sub-menu-1 div.menu-child h3{
+#main-menu li div.sub-menu-1 div.menu-child>h3{
     width: 100%;
+}
+
+.h3{
+    margin-top: 40px;
+
 }
 
 #main-menu li:hover div.sub-menu-1{
@@ -136,6 +153,7 @@ nav{
 
 #main-menu li div.sub-menu-1 div.menu-child ul.list li:hover>a{ /* background mỗi phần tử a của submenu đổi màu khi di chuột*/
     background-color: #f5e9d4;
+    animation:both;
 }
 
 .list{
@@ -145,7 +163,7 @@ nav{
 #name{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 30px;
     margin-top: 35px;
     margin-left: -120px; 
@@ -156,7 +174,7 @@ nav{
 #email{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 30px;
     margin-top: 20px;
     margin-left: -120px;
@@ -166,7 +184,7 @@ nav{
 
 #message{
     padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 30px;
     padding-bottom: 100px;
     margin-top: 20px;
@@ -189,6 +207,10 @@ nav{
     font-weight: bolder;
 }
 
+#main-menu li div.sub-menu-1 div.menu-child ul.list li:hover #submit{
+    background-color: #da853d;
+}
+
 .list-1{
     list-style-type: none;
 }
@@ -203,18 +225,38 @@ nav{
     display:flex;
     list-style-type: none;
     margin: 60px;
+    margin-left: -55px;
     padding: 0;
-    font-size: 14px;
+    font-weight:600;
+    font-size: 15px;
 }
 
 #signup li a{
     color: #303030; /*màu chữ*/
     display: flex;
     text-decoration: none;
-    padding: 0px 10px;
+    padding: 0px 17px;
 }
 
 #signup>li:hover>a{
     color: #da853d;
 }
+
+#signup li a p{
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+#signup li a p>i{
+    margin: 10px 10px;
+}
+
+#signup span{
+    color: #a0a0a0;
+}
+
+#signup li.list-1 a i{
+    margin-top: 4px;
+}
+
 
