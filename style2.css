@@ -5,13 +5,13 @@ body{
 /* ActivitySection start */
 
 .elementor-section.elementor-section-boxed.elementor-section-height-default.animated.fadeInUp {
-    padding: 50px 0; /* Simplified padding */
+    padding: 50px 0; 
     animation-name: fadeInUp;
     animation-duration: 1.25s;
     position: relative;
-    display: flex; /* Thêm flexbox */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Additional custom properties (variables) */
@@ -21,28 +21,28 @@ body{
 .responsive {
     
     max-width: 1170px;
-    margin: auto; /* Center align horizontally */
+    margin: auto; 
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Distribute items with space between them */
-    align-items: center; /* Center items vertically */
-    padding: 0 15px; /* Add padding on the sides */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 15px; 
 }
 
 .box {
     font-family: 'Arial', sans-serif;
     position: relative;
-    display: flex; /* Add flexbox */
-    justify-content: center; /* Center align horizontally */
-    align-items: center; /* Center align vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     margin-right: auto;
     margin-left: auto;
 }
 
 .icon {
     position: relative;
-    display: inline-block; /* Ensure each icon behaves as a block */
-    margin: 20px; /* Adjust margin for smaller screens */
+    display: inline-block; 
+    margin: 20px; 
     width: 150px;
     height: 150px;
     overflow: hidden;
@@ -62,7 +62,7 @@ body{
     left: 0;
     transform: scale(1);
     transition: transform 0.3s ease;
-    z-index: 2; /* Ensure `.icon-svg` covers `.text` */
+    z-index: 2; 
 }
 
 .icon-svg svg {
@@ -70,36 +70,36 @@ body{
     height: 50%;
     fill: #da853d;
     position: absolute;
-    transition: transform 0.3s ease; /* Add transition for scaling effect */
-    transform-origin: center center; /* Set transform origin to the center */
+    transition: transform 0.3s ease; 
+    transform-origin: center center; 
     transform: scale(1);
 }
 
 .text {
     position: absolute;
-    bottom: -40px; /* Move `.text` below `.icon-svg` */
-    left: 50%; /* Center horizontally */
+    bottom: -40px; 
+    left: 50%;
     transform: translateX(-50%);
     color: #303030;
     text-align: center;
-    width: 100%; /* Occupy full width of `.icon` */
+    width: 100%; 
     transition: color 0.3s;
-    z-index: 1; /* Ensure `.text` is below `.icon-svg` */
+    z-index: 1; 
     display: flex;
     justify-content: center;
 }
 
 /* Define variables globally */
 :root {
-    --primary-color: #838c48; /* Primary color */
-    --text-color: #303030; /* Default text color */
-    --hover-scale: 0.9; /* Scale transformation on hover */
-    --transition-speed: 0.3s; /* Transition speed */
+    --primary-color: #838c48; 
+    --text-color: #303030; 
+    --hover-scale: 0.9; 
+    --transition-speed: 0.3s; 
 }
 
 /* Using variables */
 .text h5 {
-    font: 20px 'Raleway', sans-serif; /* Change font size */
+    font: 20px 'Raleway', sans-serif; 
     color: var(--text-color);
     transition: color var(--transition-speed);
 }
@@ -111,5 +111,7 @@ body{
 .box:hover .text h5 {
     color: var(--primary-color);
 }
+
+
 
 /* The end ActivitySection */
