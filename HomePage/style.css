@@ -29,9 +29,9 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: center; /* Center align footer content */
+  justify-content: justify; /* Center align footer content */
   flex-wrap: wrap;
-  max-width: 2000px; /* Set maximum width for the footer content */
+  max-width: 1190px; /* Set maximum width for the footer content */
   margin: 0 auto; /* Center align the footer content */
 }
 
@@ -52,7 +52,7 @@ footer {
 .footer-column a {
   margin-bottom: 10px;
   margin-top: 10px;
-  color: #333;
+  color: #808080;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -91,24 +91,21 @@ footer {
   color: #303030; /* Set link color */
   text-decoration: none; /* Remove underline from links */
   font-size: 16px; /* Set font size */
+  transition: color 0.5s ease; /* Add transition for color change */
+}
+
+.footer-column.popular-courses a:hover {
+  color: #DA853D; /* Change link color on hover */
 }
 
 .footer-column.popular-courses a span {
   display: block; /* Make the span a block element to break to a new line */
   color: #838c48; /* Set color for "Free" */
   font-size: 16px; /* Set font size */
+  margin-top: 10px;
   pointer-events: none; /* Disable link */
 }
-.footer-column.popular-courses a:not(:last-child)::after {
-  content: '';
-  display: block;
-  width: 100%; /* Width to match the width of its parent (the anchor tag) */
-  height: 1px; /* Thickness of the underline */
-  background-color: rgb(119, 119, 119);; /* Color of the underline */
-  position: absolute;
-  bottom: -15px; /* Adjust based on the space you want between the item and the line */
-  left: 0;
-}
+
 .footer-column.popular-courses a:not(:last-child) {
   position: relative; /* Ensure the anchor is positioned relative for absolute positioning of pseudo-element */
 }
@@ -132,6 +129,7 @@ footer {
   margin-top: 10px;
   cursor: pointer;
   border-radius: 5px;
+  transition: color 1s ease, background-color 1s ease;
 }
 
 .btn:hover {
@@ -141,12 +139,12 @@ footer {
 
 .footer-column.quick-links a i.Icons {
   color: #808080; /* Adjust icon color */
-  font-size: 10px; /* Adjust icon size */
+  font-size: 7px; /* Adjust icon size */
 }
 .footer-column.quick-links a {
   position: relative; /* Ensure the anchor is positioned relative for absolute positioning of pseudo-element */
   text-decoration: none; /* Remove default underline */
-  color: #333; /* Adjust text color as needed */
+  color: #808080; /* Adjust text color as needed */
   display: block; /* Make the anchor an inline-block element */
   margin-top: 20px; /* Adjust margin between links */
   margin-bottom: 30px; /* Adjust margin between links */
