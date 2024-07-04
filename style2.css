@@ -89,19 +89,27 @@ body{
     justify-content: center;
 }
 
-h5 {
-    font-size: 20px;
-    margin: auto;
-    transition: color 0.3s;
-    font: 20px Raleway, sans-serif;
+/* Define variables globally */
+:root {
+    --primary-color: #838c48; /* Primary color */
+    --text-color: #303030; /* Default text color */
+    --hover-scale: 0.9; /* Scale transformation on hover */
+    --transition-speed: 0.3s; /* Transition speed */
+}
+
+/* Using variables */
+.text h5 {
+    font: 20px 'Raleway', sans-serif; /* Change font size */
+    color: var(--text-color);
+    transition: color var(--transition-speed);
 }
 
 .icon:hover .icon-svg svg {
-    transform: scale(0.9);
+    transform: scale(var(--hover-scale));
 }
 
 .box:hover .text h5 {
-    color: #838c48;
+    color: var(--primary-color);
 }
 
 /* The end ActivitySection */
