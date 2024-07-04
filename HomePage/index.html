@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Banner with Statistics</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="background">
@@ -38,32 +38,7 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // JavaScript for counting animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const counters = document.querySelectorAll('.count');
-            const speed = 200; // The lower the number, the faster the counting animation
-
-            counters.forEach(counter => {
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-
-                    // Lower increment to make counting slower
-                    const increment = target / speed;
-
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCount, 1);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-
-                updateCount();
-            });
-        });
-    </script>
+        <!-- Link to external JavaScript file -->
+        <script src="stat.js"></script> 
 </body>
 </html>

@@ -21,8 +21,8 @@ body, html {
 
 .banner {
     position: relative;
-    width: 100%;
-    max-width: 800px; /* Adjust as needed */
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 800px; /* Maximum width for larger screens */
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
@@ -101,21 +101,22 @@ body, html {
 
 .stat {
     text-align: center;
-    margin: 0 80px; /* Add more space between each stat */
+    margin: 0 70px; /* Add space between each stat */
+    flex: 1 1 200px; /* Equal width for stats, adjust as needed */
 }
 
 .stat p {
-    font-size: 20px; /* Set font size of stat text to 20px */
+    font-size: 20px; /* Set font size of stat text to 16px */
     margin-top: 5px;
     font-weight: bold;
 }
 
 .stat .count {
-    font-size: 50px; /* Set font size of stat number to 50px */
+    font-size: 50px; /* Set font size of stat number to 40px */
     font-weight: bold;
     color: #000000;
-    animation: countUp 2s ease-in-out;
     position: relative;
+    animation: countUp 2s ease-in-out;
 }
 
 .stat .count::after {
@@ -136,4 +137,31 @@ body, html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .banner {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .search-bar {
+        max-width: 400px; /* Adjust search bar width for smaller screens */
+    }
+
+    .stats {
+        flex-wrap: wrap; /* Allow stats to wrap on smaller screens */
+    }
+
+    .stat {
+      margin: 10px 5px; /* Adjust stat margin for smaller screens */
+      flex: 1 1 150px; /* Adjust stat width for smaller screens */
+  }
+
+    .stat .count {
+        font-size: 30px; /* Reduce font size of count on smaller screens */
+    }
+    .stat .count::after {
+      width: 50%; /* Adjusted width for responsive screens */
+  }
 }
