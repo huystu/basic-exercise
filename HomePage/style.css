@@ -18,13 +18,12 @@ footer {
   position: relative; /* Position relative for absolute positioning of the top colored space */
   border-top: 3px solid #fdf6ea; /* Border style */
   background: linear-gradient(to bottom, #fdf6ea 50%, #F5E9D4 50%);
-  background-color: #F5E9D4; /* Set background color */
-  border-top: 3px solid #fdf6ea; /* Border style */
+  background-color: #fdf6ea; /* Set background color */
 }
 
 .footer-logo img {
-  background-color: #F5E9D4; /* black background */
-  padding: 10px; /* adjust padding as needed */
+  background-color: #fdf6ea; /* black background */
+  padding: 8px; /* adjust padding as needed */
   border-radius: 50%; /* make it round */
 }
 
@@ -39,8 +38,7 @@ footer {
 .footer-column {
   font-family: 'Open Sans', sans-serif;
   margin: 10px;
-  flex: 1 1 0px; /* Adjust the basis to control column width */
-  max-width: 280px;
+  flex: 1 1 280px; /* Adjust the basis to control column width */
   text-align: left; /* Ensure content inside columns is left-aligned */
   font-size: 14px;
 }
@@ -242,7 +240,8 @@ footer {
 /*Bottom Footer*/
 .footer-bottom {
   display: flex;
-  position: absolute;
+  position: relative;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -252,36 +251,30 @@ footer {
   color: #fff;
   font-size: 14px;
   max-width: 100%; /* Ensure it doesn't exceed the width of its container */
+  margin: 0 auto;
   padding: 0 20px; /* Add padding to the sides */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  position: relative; /* Ensure it stays in the flow of the document */
+  position: a; /* Ensure it stays in the flow of the document */
   bottom: 0; /* Stick to the bottom of its container */
   left: 0; /* Align to the left edge of its container */
   right: 0; /* Align to the right edge of its container */
 }
-
-.footer-info {
-  position: absolute;
+.footer-info,
+.footer-social-icons {
   display: flex; /* Use flexbox for layout */
-  align-items: flex-start; /* Align items at the start */
   justify-content: center; /* Center items horizontally */
-  width: 100%; /* Full width */
-  right: 380px; /* Adjust this value to move the section to the right */
-  top: 50%; /* Align vertically */
-  transform: translateY(-50%); /* Center vertically */
+  align-items: center; /* Center items vertically */
+  margin: 10px 0; /* Margin for spacing between elements */
 }
 
+.footer-info {
+  flex: 2; /* Take available space */
+}
 
 .footer-social-icons {
-  position: absolute;
-  display: flex; /* Use flexbox for layout */
-  align-items: flex-start; /* Align items at the start */
-  justify-content: center; /* Center items horizontally */
+  flex: 2; /* Take available space */
+  justify-content: flex-end; /* Align social icons to the right */
   gap: 10px; /* Adjust gap between icons */
-  position: relative; /* Position relative for positioning within parent */
-  width: 100%; /* Full width */
-  flex: 0 0 auto; /* Prevent it from growing or shrinking */
-  margin-left: 450px;
 }
 
 .footer-social-icons a {
@@ -344,8 +337,14 @@ a[href="https://wedesigntech.com/"] {
 /* Responsive Design */
 @media (max-width: 767px) {
   .footer-column {
-    flex: 100%;
-    margin: 10px 0;
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
   }
 
   .footer-social-icons {
@@ -357,7 +356,8 @@ a[href="https://wedesigntech.com/"] {
     text-align: center;
   }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 40px) {
   .footer-column {
     flex: 100%;
     margin: 5px 0;
@@ -375,5 +375,26 @@ a[href="https://wedesigntech.com/"] {
   .btn {
     padding: 8px 16px;
     font-size: 12px;
+  }
+  .footer-info, .footer-social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info span, .footer-social-icons a {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-column {
+    flex: 1 1 45%; /* Adjust column width for medium screens */
+    margin: 10px; /* Add margin for spacing between columns */
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer-column {
+    flex: 1 1 22%; /* Adjust column width for larger screens */
+    margin: 10px; /* Add margin for spacing between columns */
   }
 }
