@@ -1,0 +1,107 @@
+body{
+    background-color: #fdf6ea ;
+  }
+
+/* ActivitySection start */
+
+.elementor-section.elementor-section-boxed.elementor-section-height-default.animated.fadeInUp {
+    padding: 50px 0; /* Simplified padding */
+    animation-name: fadeInUp;
+    animation-duration: 1.25s;
+    position: relative;
+    display: flex; /* Thêm flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Additional custom properties (variables) */
+
+
+/* Responsive for ActivitySection */
+.responsive {
+    
+    max-width: 1170px;
+    margin: auto; /* Center align horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Distribute items with space between them */
+    align-items: center; /* Center items vertically */
+    padding: 0 15px; /* Add padding on the sides */
+}
+
+.box {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    display: flex; /* Add flexbox */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icon {
+    position: relative;
+    display: inline-block; /* Ensure each icon behaves as a block */
+    margin: 20px; /* Adjust margin for smaller screens */
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.icon-svg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f5e9d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    z-index: 2; /* Ensure `.icon-svg` covers `.text` */
+}
+
+.icon-svg svg {
+    width: 50%;
+    height: 50%;
+    fill: #da853d;
+    position: absolute;
+    transition: transform 0.3s ease; /* Add transition for scaling effect */
+    transform-origin: center center; /* Set transform origin to the center */
+    transform: scale(1);
+}
+
+.text {
+    position: absolute;
+    bottom: -40px; /* Move `.text` below `.icon-svg` */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    color: #303030;
+    text-align: center;
+    width: 100%; /* Occupy full width of `.icon` */
+    transition: color 0.3s;
+    z-index: 1; /* Ensure `.text` is below `.icon-svg` */
+    display: flex;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 20px;
+    margin: auto;
+    transition: color 0.3s;
+    font: 20px Raleway, sans-serif;
+}
+
+.icon:hover .icon-svg svg {
+    transform: scale(0.9);
+}
+
+.box:hover .text h5 {
+    color: #838c48;
+}
+
+/* The end ActivitySection */
