@@ -3,13 +3,13 @@
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+.banner{
     background-image: url(https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/fullscreen-slider.jpg);
     background-size: cover;
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 
 .content{
@@ -55,7 +55,7 @@ nav{
     padding: 0px 20px;
 }
 
-#main-menu>li:hover>a{  /*đổi mày chữ khi di chuột*/
+#main-menu>li:hover>a{  /*đổi màu chữ khi di chuột*/
     color: #838c48;
 }
 
@@ -65,6 +65,8 @@ nav{
 
 #main-menu li.home a p{
     padding: 10px 20px;
+    border-radius: 4px;
+    border-width: 2px;
 }
 
 #main-menu li a i{
@@ -76,7 +78,6 @@ nav{
     color: #303030;
     display: block;
 }
-
 
 #main-menu ul.sub-menu{
     background-color: #fdf6ea;
@@ -245,6 +246,8 @@ nav{
 #signup li a p{
     margin-top: -10px;
     margin-right: 10px;
+    border-radius: 4px;
+    border-width: 2px;
 }
 
 #signup li a p>i{
@@ -260,3 +263,84 @@ nav{
 }
 
 
+/* UPCOMING EVENTS */
+
+#upcoming{
+    background-color: #fdf6ea;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    position: relative;
+}
+
+.article{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+
+h1{
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #303030;
+}
+
+.arrow{
+    display: flex;
+    list-style: none;
+    margin: -45px 1000px;
+}
+.arrow li p i{
+    padding: 13px 15px;
+}
+
+.arrow li p{
+    margin: 5px;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+.arrow li:hover p{
+    background-color: #838c48;
+    border-color: #838c48;
+    color: #fff;
+}
+
+img{
+    margin-top: 80px;
+}
+
+.welcoming{
+    margin: -125px 210px;
+}
+.welcoming a{
+    text-decoration: none;
+}
+
+.welcoming a p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;     
+    color: #303030;
+}
+
+.welcoming a:hover p{
+    color: #838c48
+}
+
+.welcoming span{
+    color: #808080;
+}
+
+.welcoming p.calendar{
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    width: 400px;
+}
