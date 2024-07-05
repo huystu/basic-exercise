@@ -1,0 +1,117 @@
+body{
+    background-color: #fdf6ea ;
+  }
+
+/* ActivitySection start */
+
+.elementor-section.elementor-section-boxed.elementor-section-height-default.animated.fadeInUp {
+    padding: 50px 0; 
+    animation-name: fadeInUp;
+    animation-duration: 1.25s;
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Additional custom properties (variables) */
+
+
+/* Responsive for ActivitySection */
+.responsive {
+    
+    max-width: 1170px;
+    margin: auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 15px; 
+}
+
+.box {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icon {
+    position: relative;
+    display: inline-block; 
+    margin: 20px; 
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.icon-svg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f5e9d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    z-index: 2; 
+}
+
+.icon-svg svg {
+    width: 50%;
+    height: 50%;
+    fill: #da853d;
+    position: absolute;
+    transition: transform 0.3s ease; 
+    transform-origin: center center; 
+    transform: scale(1);
+}
+
+.text {
+    position: absolute;
+    bottom: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #303030;
+    text-align: center;
+    width: 100%; 
+    transition: color 0.3s;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+/* Define variables globally */
+:root {
+    --primary-color: #838c48; 
+    --text-color: #303030; 
+    --hover-scale: 0.9; 
+    --transition-speed: 0.3s; 
+}
+
+/* Using variables */
+.text h5 {
+    font: 20px 'Raleway', sans-serif; 
+    color: var(--text-color);
+    transition: color var(--transition-speed);
+}
+
+.icon:hover .icon-svg svg {
+    transform: scale(var(--hover-scale));
+}
+
+.box:hover .text h5 {
+    color: var(--primary-color);
+}
+
+
+
+/* The end ActivitySection */
