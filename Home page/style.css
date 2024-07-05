@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner{
+    background-image: url(https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/fullscreen-slider.jpg);
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+.header{
+    background-image: linear-gradient(to bottom, #f5e9d5, #f5e9d5b9, #f5e9d500);/*chuyển màu*/
+}
+
+.baselogo{
+    margin-top: 0px;
+}
+
+.logo{
+    margin-top: 20px;
+    padding-bottom: 17px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#main-menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 60px;
+    padding: 0px;
+    margin-left: 130px;
+    font-size: 15px;
+    font-weight:600;
+}
+
+#main-menu li a{
+    color: #303030;  /*màu chữ*/
+    display: block;
+    position: relative;
+    text-decoration: none;         /*ẩn gạch dưới dòng*/
+    padding: 0px 20px;
+}
+
+#main-menu>li:hover>a{  /*đổi màu chữ khi di chuột*/
+    color: #838c48;
+}
+
+#main-menu li.home a{
+    margin-top: -13px;
+}
+
+#main-menu li.home a p{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+#main-menu li a i{
+    margin: 0px 15px;
+    display: none;
+}
+
+#main-menu>li:hover>a>i{
+    color: #303030;
+    display: block;
+}
+
+#main-menu ul.sub-menu{
+    background-color: #fdf6ea;
+    border-top: 3px solid #e2d6c1;    /*đường viền trên của sub menu*/
+    position: absolute;
+    list-style-type: none;             /* ẩn dấu mục lục*/
+    display: none;                     /*ẩn sub menu*/
+    margin: 0px 10px;
+    padding: 15px 0px;
+    width: 180px;
+    font-weight: lighter;
+}
+
+#main-menu li:hover>ul.sub-menu{  /*chỉ hiển thị sub menu ở cấp trực tiếp khi di chuột*/
+    display: block;
+}
+
+#main-menu ul.sub-menu a{  /*thẻ a của menu phụ*/
+    display: block;
+    padding: 15px 25px;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{ /* menu phụ của phụ*/
+    left: 150px;
+    margin: -50px 15px;
+}
+
+#main-menu ul.sub-menu li:hover>a{ /* background mỗi phần tử a của submenu đổi màu khi di chuột*/
+    background-color: #f5e9d4;
+}
+
+#main-menu div.sub-menu-1{
+    background-color: #fdf6ea;
+    border-top: 3px solid #e2d6c1; 
+    position: absolute;
+    display: none;
+    margin: 0px 10px;
+    padding: 30px 40px;
+    width: 900px;
+    right:240px;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child ul.list {
+    list-style: none;
+    padding: 15px 0px;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child ul.list li>a{
+    padding: 15px;
+    padding-right: 40px;
+    right: 120px;
+    top: 30px;
+    width: 100%;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child{
+    display: flex;
+    width: 100%;
+    font-weight: lighter;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child>h3{
+    width: 100%;
+}
+
+.h3{
+    margin-top: 40px;
+
+}
+
+#main-menu li:hover div.sub-menu-1{
+    display: block;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child ul.list li:hover>a{ /* background mỗi phần tử a của submenu đổi màu khi di chuột*/
+    background-color: #f5e9d4;
+    animation:both;
+}
+
+.list{
+    list-style: none;
+}
+
+#name{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-top: 35px;
+    margin-left: -120px; 
+    border-color: #e2d6c1;   
+    border-radius: 2px solid;
+}
+
+#email{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-left: -120px;
+    border-color: #e2d6c1;   
+    border-radius: 2px solid;
+}
+
+#message{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    margin-left: -120px;
+    border-color: #e2d6c1;   
+    border-radius: 2px solid;
+}
+
+#submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-left: -20px;
+    color: #ffff;
+    background-color: #838c48;
+    border-color: #838c48;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#main-menu li div.sub-menu-1 div.menu-child ul.list li:hover #submit{
+    background-color: #da853d;
+}
+
+.list-1{
+    list-style-type: none;
+}
+.list-1 li>a{
+    padding: 0px;
+    padding-right: 50px;
+    top: 50px;
+    width: 100%;
+}
+
+#signup{
+    display:flex;
+    list-style-type: none;
+    margin: 60px;
+    margin-left: -55px;
+    padding: 0;
+    font-weight:600;
+    font-size: 15px;
+}
+
+#signup li a{
+    color: #303030; /*màu chữ*/
+    display: flex;
+    text-decoration: none;
+    padding: 0px 17px;
+}
+
+#signup>li:hover>a{
+    color: #da853d;
+}
+
+#signup li a p{
+    margin-top: -10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+#signup li a p>i{
+    margin: 10px 10px;
+}
+
+#signup span{
+    color: #a0a0a0;
+}
+
+#signup li.list-1 a i{
+    margin-top: 4px;
+}
+
+/* TECHNOLOGY LOGO*/
+
+.tech{
+    background-image: url(https://dtlmselementor.wpengine.com/wp-content/uploads/2023/11/parallax-light.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+.tech ul{
+    display: flex;
+    list-style: none;
+}
+
+.tech ul li{
+    justify-content: center;
+}
+
+.circle li{
+    margin: auto 25px;
+}
+
+.circle li>p{
+    font-size: 20px;
+}
+
+svg{
+    fill: #fff;
+    width: 30px;
+    height: 30px;   
+    margin: -7px; 
+}
+
+a{
+    color: #303030;
+}
+
+.circle li:hover p{
+    color: #da853d;
+}
+
+.p1{
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #f2672e;
+    width: 20px;
+    margin: 20px;
+    padding: 30px 35px;
+}
+
+.p2{
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #0171bb;
+    width: 20px;
+    margin: 20px;
+    padding: 30px 35px;
+}
+
+.p3{
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #9fbf3a;
+    width: 20px;
+    margin: 20px;
+    padding: 30px 35px;
+}
+
+.p4{
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #2b8bc0;
+    width: 20px;
+    margin: 20px;
+    padding: 30px 35px;
+}
+
+.p5{
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #e5a329;
+    width: 20px;
+    margin: 20px;
+    padding: 30px 35px;
+}
+
+.p6{
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #d10101;
+    width: 20px;
+    margin: 20px;
+    padding: 30px 35px;
+}
+
+
+/* UPCOMING EVENTS */
+
+.events{
+    background-color: #fdf6ea; 
+    min-height: 300px;
+    background-position:center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 150px;}
+.title h1{
+    font-weight: 500;
+    margin: 10px auto;
+    color: #303030;
+}
+
+.arrow{
+    display: flex;
+    list-style: none;
+    margin: -50px 1050px;
+}
+.arrow li p i{
+    padding: 11px 13px;
+}
+
+.arrow li p{
+    margin: 5px;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+.arrow li:hover p{
+    background-color: #838c48;
+    border-color: #838c48;
+    color: #fff;
+}
+
+img{
+    margin-top: 90px;
+}
+
+.welcoming{
+    margin: -125px 210px;
+}
+.welcoming a{
+    text-decoration: none;
+}
+
+.welcoming a p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;     
+    color: #303030;
+}
+
+.welcoming a:hover p{
+    color: #838c48
+}
+
+.welcoming span{
+    color: #808080;
+}
+
+.welcoming p.calendar{
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    width: 400px;
+}
+
+/* GET IN TOUCH WITH US */
+
+.cover{
+    background-image: linear-gradient( #d4853cec, #d4853cec), url(https://tttrainingacademy.com/wp-content/uploads/2014/07/newsletter-parallax.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+.cover ul{
+    list-style: none;
+    display: block;
+    margin: 50px 180px;
+    color: #fff;
+}
+
+.cover ul li h1{
+    font-weight: 500;
+}
+.cover ul li{
+    margin: 50px;
+}
+
+#your{
+    padding: 20px 0;
+    padding-right: 270px;
+    padding-left: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-width: 0;
+} 
+
+#subscrise{
+    margin-left: -5px;
+    padding: 0px 30px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    background-color: #838c48;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-width: 0;
+}
+
+.cover ul li:hover input#subscrise{
+    background-color: #353531;
+}
+
