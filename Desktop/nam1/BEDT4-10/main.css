@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fefaf1;
+    align-items: center; /* Canh giữa các phần tử theo chiều dọc */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefaf1;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Đảm bảo rộng 100% */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+}
+
+.header h1 {
+    font-size: 2.3rem; /* Giảm kích thước font chữ */
+    font-weight: 500; /* Đậm nhỏ lại */
+    margin: 0;
+}
+
+.carousel-buttons {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các nút */
+}
+
+.carousel-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px; /* Kích thước padding */
+    cursor: pointer;
+    border-radius: 5px; /* Đường viền cong */
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #000; /* Viền đen */
+    width: 50px; /* Kích thước chiều rộng */
+    height: 50px; /* Kích thước chiều cao */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-btn:hover {
+    background-color: #838C48;
+    transform: scale(1.1);
+    
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%; /* Đảm bảo rộng 100% */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+}
+
+.content {
+    width: 35%;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.content hr {
+    width: 50px;
+    height: 4px;
+    background-color: #838C48;
+    border: none;
+    margin: 20px 0;
+}
+
+.content .title {
+    font-size: 1.8rem; /* Giảm kích thước font chữ */
+    font-weight: 500; /* Đậm nhỏ lại */
+    margin-bottom: 10px;
+}
+
+.content .description {
+    line-height: 1.5; /* Giảm độ dài dòng */
+    color: #999; /* Chỉnh màu sắc nhạt hơn */
+    font-weight: 400; /* Đặt font-weight bình thường */
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #838C48; /* Darker green on hover */
+    color: white;
+}
+
+
+.courses {
+    display: flex;
+    gap: 20px;
+    width: 60%;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefaf1;
+    border: 1px solid #fefaf1;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-image img {
+    width: 100%;
+    display: block;
+}
+
+.course-content {
+    padding: 15px;
+}
+
+.course-content h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.course-content .price {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.course-content .details {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.course-content .duration {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #777;
+}
+
+.course-content .rating {
+    margin-top: 10px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeInImages {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.additional-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px; /* Adjus

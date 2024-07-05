@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Màu nền xám nhạt */
+    color: #333; /* Màu chữ chính */
+}
+
+header {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%); /* Gradient màu nền cho header */
+    color: white; /* Màu chữ trắng */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3em; /* Kích thước tiêu đề lớn */
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ cái */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.blog-item {
+    background-color: #fff; /* Màu nền trắng cho các mục blog */
+    border-radius: 15px;
+    padding: 0;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Đổ bóng nhẹ */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-item:hover {
+    transform: translateY(-10px); /* Hiệu ứng di chuyển lên khi di chuột vào */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi hover */
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 5px solid #2575fc; /* Đường viền dưới màu xanh */
+}
+
+.blog-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.date-icon {
+    font-size: 1.5em;
+    color: #2575fc; /* Màu biểu tượng ngày tháng */
+    margin-right: 10px;
+}
+
+.date-text {
+    font-size: 1.2em;
+    color: #666; /* Màu văn bản ngày tháng */
+}
+
+h2 {
+    font-size: 1.6em; /* Kích thước tiêu đề lớn hơn */
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+p {
+    margin: 5px 0;
+    color: #777; /* Màu văn bản phụ */
+}
+
+p i {
+    margin-right: 5px;
+    color: #2575fc; /* Màu cho biểu tượng trong văn bản */
+}
+
+footer {
+    background-color: #333; /* Màu nền chân trang */
+    color: white; /* Màu chữ trắng */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+
+footer p {
+    margin: 0;
+}
