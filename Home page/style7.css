@@ -1,0 +1,83 @@
+
+header {
+    background-color: #ffffff00; /* Màu nền trắng cho các mục blog */
+    color: rgb(0, 0, 0); /* Màu chữ trắng */
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.courses-component .header-course h1 {
+    font-size: 36px; /* Kích thước tiêu đề lớn */
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ cái */
+}
+
+.courses-component .header-course h1 ::after {
+    content: '';
+    display: block;
+    width: 100%; /* Adjust width to 100% */
+    height: 4px; /* Adjust thickness to 4px */
+    background-color: #838c48;
+    margin: 10px auto; /* Adjust spacing between the count and the line */
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.blog-item {
+    background-color: #ffffff00; /* Màu nền trắng cho các mục blog */
+    border-radius: 15px;
+    padding: 0;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-item:hover {
+    transform: translateY(-10px); /* Hiệu ứng di chuyển lên khi di chuột vào */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi hover */
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 5px solid #005eff00; /* Đường viền dưới màu xanh */
+}
+
+.blog-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.date-icon {
+    font-size: 1.5em;
+    color: #DA853D; /* Màu biểu tượng ngày tháng */
+    margin-right: 10px;
+}
+
+.date-text {
+    font-size: 1.2em;
+    color: #666; /* Màu văn bản ngày tháng */
+}
+
+h2 {
+    font-size: 1.6em; /* Kích thước tiêu đề lớn hơn */
+    margin: 10px 0;
+    font-weight: 500;
+}
