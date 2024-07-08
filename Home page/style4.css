@@ -10,7 +10,7 @@ body {
     align-items: center; /* Canh giữa các phần tử theo chiều dọc */
 }
 
-.header {
+.header-course {
     display: flex;
     justify-content: space-between;
     background-color: #fefaf1;
@@ -20,7 +20,7 @@ body {
     max-width: 1200px; /* Giới hạn chiều rộng tối đa */
 }
 
-.header h1 {
+.header-course h1 {
     font-size: 2.3rem; /* Giảm kích thước font chữ */
     font-weight: 500; /* Đậm nhỏ lại */
     margin: 0;
